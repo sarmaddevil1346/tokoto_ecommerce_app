@@ -2,23 +2,21 @@ import 'package:flutter/material.dart';
 
 import '../../../Constraints/custom_suffix_icon.dart';
 
-TextFormField buildConPassFormField() {
+TextFormField buildFirstNameFormField() {
   return TextFormField(
-    //controller: passwordEditingController,
+    //  controller: emailEditingController,
     validator: (value) {
       if (value!.isEmpty) {
-        return "Please Enter Confirm your Password";
+        return "Please Enter your first name";
       }
-      return null;
     },
     keyboardType: TextInputType.emailAddress,
-    obscureText: true,
     decoration: const InputDecoration(
-      hintText: "Enter the Confirm Password",
-      labelText: "Confirm Password",
+      hintText: "Enter the First Name",
+      labelText: "First Name",
       floatingLabelBehavior: FloatingLabelBehavior.always,
       suffixIcon: CustomSuffixIcon(
-        iconData: Icons.lock_outline,
+        iconData: Icons.email_outlined,
       ),
     ),
   );

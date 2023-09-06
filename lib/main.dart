@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'Components/ThemeData.dart';
+import 'Pages/completeprofile/complete_profile.dart';
+import 'Pages/otp_screen/otp_ui.dart';
 import 'Pages/sign_up/Sign_Up.dart';
 
 void main() async {
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
         iconTheme: buildIconThemeData(),
         useMaterial3: false,
       ),
-      home: const SignUpScreen(),
+      home: const OTPScreen(),
     );
   }
 }

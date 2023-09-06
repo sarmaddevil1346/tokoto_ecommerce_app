@@ -1,11 +1,11 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:tokoto_ecommerce_app/Constraints/default_buttons.dart';
-import 'package:tokoto_ecommerce_app/size_config.dart';
-import '../Sign_in_screen/Components/emailfield.dart';
+import 'package:tokoto_ecommerce_app/Pages/sign_up/Components/emailfield.dart';
+
+import '../../Constraints/default_buttons.dart';
 import '../../Constraints/social_card.dart';
 import 'Components/confirmpassfield.dart';
 import 'Components/passfield.dart';
+
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
@@ -53,11 +53,11 @@ class SignUpScreen extends StatelessWidget {
                 const SizedBox(
                   height: 30,
                 ),
-                buildPassFormField(),
+                buildPasswordFormField(),
                 const SizedBox(
                   height: 30,
                 ),
-                buildConPasswordFormField(),
+                buildConPassFormField(),
                 const SizedBox(
                   height: 30,
                 ),
@@ -89,6 +89,7 @@ class SignUpScreen extends StatelessWidget {
                   "By continuing your confirm password that you\n agree with our term and Conditions",
                   textAlign: TextAlign.center,
                 ),
+
               ],
             ),
           ),

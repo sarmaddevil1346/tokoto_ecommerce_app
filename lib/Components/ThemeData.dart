@@ -8,7 +8,12 @@ IconThemeData buildIconThemeData() => const IconThemeData(
 AppBarTheme buildAppBarTheme() {
   return const AppBarTheme(
     color: Colors.white,
+    centerTitle: true,
     elevation: 1,
+    titleTextStyle: TextStyle(
+      color: Colors.black,
+      fontSize: 17
+    )
   );
 }
 
@@ -27,3 +32,5 @@ InputDecorationTheme buildInputDecorationTheme() {
     focusedBorder: outlineInputBorder,
   );
 }
+
+
