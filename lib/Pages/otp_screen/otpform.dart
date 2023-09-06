@@ -69,7 +69,7 @@ class _OtpFormState extends State<OtpForm> {
               ),
               decoration: otpDecoration,
               onChanged: (value) {
-                nextField(focusNode: focusNode2, value: value);
+                nextField(focusNode: focusNode3, value: value);
               },
             ),
           ),
@@ -85,7 +85,7 @@ class _OtpFormState extends State<OtpForm> {
               ),
               decoration: otpDecoration,
               onChanged: (value) {
-                nextField(focusNode: focusNode2, value: value);
+                nextField(focusNode: focusNode4, value: value);
               },
             ),
           ),
