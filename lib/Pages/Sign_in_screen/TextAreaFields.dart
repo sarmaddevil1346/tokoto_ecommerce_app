@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tokoto_ecommerce_app/Pages/Sign_in_screen/Components/social_card.dart';
+import 'package:tokoto_ecommerce_app/Constraints/social_card.dart';
 import '../../Constraints/default_buttons.dart';
 import '../sign_up/Sign_Up.dart';
 import 'Components/PassField.dart';
@@ -74,30 +74,42 @@ class _InputTextFormFieldState extends State<InputTextFormField> {
                         builder: (context) => const SignUpScreen()));
               }
             }),
-             const SizedBox(height: 60,),
-             Row(
-               mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                SocialCard(voidCallback: (){} , iconData: Icons.facebook ,),
-                SocialCard(voidCallback: (){}, iconData: Icons.facebook,),
-                SocialCard(voidCallback: (){}, iconData: Icons.facebook,),
-              ],
+            const SizedBox(
+              height: 60,
             ),
-             const SizedBox(height: 20,),
-             Row(
+            Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Text(("Do not have an account? "),
-                style: TextStyle(
-
-                ),),
+                SocialCard(
+                  voidCallback: () {},
+                  imageurl: "assets/icons/google-icon.svg",
+                ),
+                SocialCard(
+                  voidCallback: () {},
+                  imageurl: 'assets/icons/facebook-2.svg',
+                ),
+                SocialCard(
+                  voidCallback: () {},
+                  imageurl: 'assets/icons/twitter.svg',
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text(
+                  ("Do not have an account? "),
+                  style: TextStyle(),
+                ),
                 GestureDetector(
                   onTap: () => const SignUpScreen(),
-                  child: const Text("Sign Up" ,
-                    style: TextStyle(
-                      fontSize: 18,
-                      color: Colors.deepOrangeAccent
-                    ),
+                  child: const Text(
+                    "Sign Up",
+                    style:
+                        TextStyle(fontSize: 18, color: Colors.deepOrangeAccent),
                   ),
                 ),
               ],

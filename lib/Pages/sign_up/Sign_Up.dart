@@ -1,7 +1,9 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:tokoto_ecommerce_app/Constraints/default_buttons.dart';
+import 'package:tokoto_ecommerce_app/size_config.dart';
 import '../Sign_in_screen/Components/emailfield.dart';
-import '../Sign_in_screen/Components/social_card.dart';
+import '../../Constraints/social_card.dart';
 import 'Components/confirmpassfield.dart';
 import 'Components/passfield.dart';
 
@@ -29,10 +31,23 @@ class SignUpScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                const Text("Welcome Back"),
+                const SizedBox(
+                  height: 30 ,
+                ),
+                const Text("Welcome Back",
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight:  FontWeight.bold
+                ),),
+                const SizedBox(
+                  height:05 ,
+                ),
                 const Text(
                   "Sign in with your email and password  \nor continue with social media",
                   textAlign: TextAlign.center,
+                ),
+                 const SizedBox(
+                  height: 40 ,
                 ),
                 buildEmailFormField(),
                 const SizedBox(
@@ -47,22 +62,28 @@ class SignUpScreen extends StatelessWidget {
                   height: 30,
                 ),
                 DefaultButton(double.infinity, "Sign Up", () {}),
+                const SizedBox(height: 30,),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SocialCard(
-                      voidCallback: () {},
-                      iconData: Icons.facebook,
+                      voidCallback: () {
+
+                      },
+                      imageurl: "assets/icons/google-icon.svg",
                     ),
                     SocialCard(
                       voidCallback: () {},
-                      iconData: Icons.facebook,
+                      imageurl: 'assets/icons/facebook-2.svg',
                     ),
                     SocialCard(
                       voidCallback: () {},
-                      iconData: Icons.facebook,
+                      imageurl: 'assets/icons/twitter.svg',
                     ),
                   ],
+                ),
+                const SizedBox(
+                  height: 20 ,
                 ),
                 const Text(
                   "By continuing your confirm password that you\n agree with our term and Conditions",

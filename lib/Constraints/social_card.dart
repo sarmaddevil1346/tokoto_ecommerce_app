@@ -1,13 +1,14 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class SocialCard extends StatelessWidget {
   const SocialCard({super.key,
     required this.voidCallback,
-    required this.iconData,
+    required this.imageurl,
   });
-  final voidCallback;
-  final iconData;
+  final VoidCallback voidCallback ;
+  final String imageurl;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -19,7 +20,7 @@ class SocialCard extends StatelessWidget {
         padding: const EdgeInsets.all(12),
         decoration:
         const BoxDecoration(color: Colors.white, shape: BoxShape.circle),
-        child: Icon(iconData),
+        child: SvgPicture.asset(imageurl),
       ),
     );
   }
