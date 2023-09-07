@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'components/category.dart';
 import 'components/discount_banner.dart';
 import 'components/home_header.dart';
+import 'components/special_card_offer.dart';
+import 'components/special_offfer.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -19,28 +21,16 @@ class _HomeScreenState extends State<HomeScreen> {
           SizedBox(
             height: 20,
           ),
-          HomeHeader(),
+          HomeHeader1(),
           SizedBox(
             height: 20,
           ),
           DiscountBanner(),
-          SizedBox(height: 10,),
+          SizedBox(
+            height: 10,
+          ),
           Categories(),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20.0),
-            child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text("Special for you",style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20
-                ),),
-                Text("See More",style: TextStyle(
-                    fontSize: 12
-                ),),
-              ],
-            ),
-          )
+          SpecialOffers()
         ],
       ),
     );

@@ -3,8 +3,8 @@ import 'package:tokoto_ecommerce_app/Pages/home/components/search_fields.dart';
 
 import 'icn_wth_btn_counter.dart';
 
-class HomeHeader extends StatelessWidget {
-  const HomeHeader({
+class HomeHeader1 extends StatelessWidget {
+  const HomeHeader1({
     super.key,
   });
 
