@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'Components/ThemeData.dart';
-import 'Pages/completeprofile/complete_profile.dart';
-import 'Pages/otp_screen/otp_ui.dart';
-import 'Pages/sign_up/Sign_Up.dart';
+import 'Pages/home/home_screen.dart';
 
 void main() async {
   runApp(const MyApp());
@@ -22,7 +20,8 @@ class MyApp extends StatelessWidget {
         iconTheme: buildIconThemeData(),
         useMaterial3: false,
       ),
-      home: const OTPScreen(),
+      home: const HomeScreen(),
+
     );
   }
 }
