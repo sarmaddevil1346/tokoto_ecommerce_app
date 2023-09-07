@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 class SectionTitle extends StatelessWidget {
   const SectionTitle({
-    super.key,
+    super.key, required this.text1, required this.text2,
   });
-
+final String text1,text2;
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return  Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
-          "Special for you",
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+          text1,
+          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
         ),
         Text(
-          "See More",
-          style: TextStyle(fontSize: 12),
+        text2,
+          style: const TextStyle(fontSize: 12),
         ),
       ],
     );

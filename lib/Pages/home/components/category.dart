@@ -23,7 +23,7 @@ class Categories extends StatelessWidget {
                   icon: categoriesitemlist.elementAt(index).icon,
                   press: () {});
             },
-          )
+          ),
         ],
       ),
     );

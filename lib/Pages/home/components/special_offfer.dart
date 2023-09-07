@@ -14,7 +14,7 @@ class SpecialOffers extends StatelessWidget {
       children: [
         const Padding(
           padding: EdgeInsets.symmetric(horizontal: 20.0),
-          child: SectionTitle(),
+          child: SectionTitle(text1: 'Special for you', text2: 'See More',),
         ),
         const SizedBox(height: 20,),
         SingleChildScrollView(
@@ -37,6 +37,9 @@ class SpecialOffers extends StatelessWidget {
               const SizedBox(width: 20,)
             ],
           ),
+        ),
+        const SizedBox(
+          height: 20,
         ),
       ],
     );

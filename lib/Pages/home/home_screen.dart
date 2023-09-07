@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'components/category.dart';
 import 'components/discount_banner.dart';
 import 'components/home_header.dart';
-import 'components/special_card_offer.dart';
+import 'components/popular_products.dart';
 import 'components/special_offfer.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -16,23 +16,33 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Column(
-        children: [
-          SizedBox(
-            height: 20,
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              SizedBox(
+                height: 20,
+              ),
+              HomeHeader1(),
+              SizedBox(
+                height: 20,
+              ),
+              DiscountBanner(),
+              SizedBox(height: 30,),
+              SizedBox(
+                height: 10,
+              ),
+              Categories(),
+
+              SpecialOffers(),
+
+              PopularProducts(),
+              SizedBox(height: 20,)
+            ],
           ),
-          HomeHeader1(),
-          SizedBox(
-            height: 20,
-          ),
-          DiscountBanner(),
-          SizedBox(
-            height: 10,
-          ),
-          Categories(),
-          SpecialOffers()
-        ],
+        ),
       ),
+
     );
   }
 }

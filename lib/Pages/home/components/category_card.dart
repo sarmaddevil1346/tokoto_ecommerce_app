@@ -32,7 +32,10 @@ class CategoryCard extends StatelessWidget {
             const SizedBox(
               height: 5,
             ),
-            Text(text)
+            Text(text),
+            const SizedBox(
+              height: 20,
+            ),
           ],
         ),
       ),
