@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'Components/ThemeData.dart';
+import 'Pages/detail_page/details_paga.dart';
 import 'Pages/home/home_screen.dart';
 
 void main() async {
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         iconTheme: buildIconThemeData(),
         useMaterial3: false,
       ),
-      home: const HomeScreen(),
+      home: const DetailPage(),
 
     );
   }

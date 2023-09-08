@@ -28,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 height: 20,
               ),
               DiscountBanner(),
-              SizedBox(height: 30,),
+              SizedBox(height: 20,),
               SizedBox(
                 height: 10,
               ),
